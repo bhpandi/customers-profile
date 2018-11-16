@@ -1,0 +1,81 @@
+@import "~antd/dist/antd.css";
+.ant-layout-header {
+  .logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 24px 16px 0;
+  }
+  padding: 0 24px;
+}
+
+.anticon-right.arrow {
+  right: 10px;
+}
+
+.ant-collapse {
+  > .ant-collapse-item {
+    > .ant-collapse-header {
+      padding-left: 16px;
+      .arrow {
+        left: unset;
+      }
+    }
+  }
+}
+
+.order-id {
+  text-align: right;
+  padding-right: 20px;
+  color: #6c7378;
+  em {
+    color: #9a9292;
+  }
+}
+
+.user-profile {
+  label {
+    padding-right: 5px;
+  }
+  p {
+    padding: 10px;
+    &:nth-child(odd) {
+      background: #c1c6cc;
+    }
+  }
+}
+
+.avatar-name {
+  padding-left: 10px;
+}
+
+.ant-avatar-square {
+  background-color: #52c41a;
+}
+
+.flex-container {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+}
+
+.expand-collopse {
+  img {
+    padding-right: 10px;
+    + span {
+      display: inline-block;
+    }
+  }
+}
+
+.ant-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.profile-container {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
