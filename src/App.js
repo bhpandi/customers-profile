@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Home from "./components/home";
 import searchApi from "./utils/Api";
+import { Icon } from "antd";
 import "./css/App.scss";
 
 class App extends Component {
@@ -22,7 +23,9 @@ class App extends Component {
     return Object.keys(this.state.orderDetails).length ? (
       <Home {...this.state} />
     ) : (
-      <div> Loading ... </div>
+      <div>
+        <Icon type="sync" spin />
+      </div>
     );
   }
 }
