@@ -132,6 +132,11 @@ class Profile extends Component {
                 <Panel
                   header={
                     <div>
+                      <Row className="orderContainer">
+                        <Col span={24} className="order-id">
+                          Order # <strong>{item.id}</strong>
+                        </Col>
+                      </Row>
                       <Row gutter={16} className="expand-collopse">
                         <Col span={8}>
                           <img
@@ -153,17 +158,14 @@ class Profile extends Component {
                             <strong>{item.product.orderStatus}</strong>
                           </span>
                         </Col>
-
-                        <Row>
-                          <Col span={24} className="order-id">
-                            Order # <strong>{item.id}</strong>
-                            <br />
-                            <em>
-                              Orderd On:
-                              {item.product.orderDate.replace("GMT+0000", "")}
-                            </em>
-                          </Col>
-                        </Row>
+                      </Row>
+                      <Row className="order-date">
+                        <Col span={24}>
+                          <em>
+                            Orderd On:
+                            {item.product.orderDate.replace("GMT+0000", "")}
+                          </em>
+                        </Col>
                       </Row>
                     </div>
                   }
