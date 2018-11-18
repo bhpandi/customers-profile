@@ -13,7 +13,6 @@ class Profile extends Component {
     });
   };
   onTabChange = key => {
-    console.log(key);
     this.setState({
       tab: key
     });

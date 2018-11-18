@@ -23,7 +23,7 @@ class App extends Component {
     return Object.keys(this.state.orderDetails).length ? (
       <Home {...this.state} />
     ) : (
-      <div>
+      <div className="initial-loader">
         <Icon type="sync" spin />
       </div>
     );
